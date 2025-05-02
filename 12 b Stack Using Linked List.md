@@ -15,24 +15,24 @@ To write a Python program to insert 3 elements into a stack and display the inde
 
 ## Program
 
-```python
+```
+reg no:212223070023
+name: Saran Krishna P S
 stack = []
 
-# Push elements into the stack
-stack.append('a')
-stack.append('b')
-stack.append('c')
+for i in range(3):
+    val = input(f"Enter element {i+1}: ")
+    stack.append(val)
 
-# Display the initial stack
-print('Initial stack:', stack)
+print("\nStack elements with index values:")
+for index, value in enumerate(stack):
+    print(f"Index {index}: {value}")
 
-# Print index and element
-for i in range(len(stack)):
-    print(i, stack[i])
 ```
 
 ## Output
+![image](https://github.com/user-attachments/assets/c13a1e98-291c-411b-ad34-4a4b953cf56a)
 
 
 ## Result
-
+thus the program is executed successfully.
