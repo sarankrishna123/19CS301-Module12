@@ -17,31 +17,66 @@ To write a Python program to type and display the elements pushed into a stack u
 
 ## PROGRAM
 
-```python
-stack = []
+```
+reg no:212223070023
+name:Saran Krishna P S
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-# Push elements into the stack
-stack.append('a')
-stack.append('b')
-stack.append('c')
+class Stack:
+    def __init__(self):
+        self.top = None
+    
+    def push(self, data):
+        new_node = Node(data)
+        new_node.next = self.top
+        self.top = new_node
+    
+    def pop(self):
+        if self.is_empty():
+            print("Stack is empty!")
+            return None
+        popped = self.top
+        self.top = self.top.next
+        return popped.data
+    
+    def peek(self):
+        if self.is_empty():
+            print("Stack is empty!")
+            return None
+        return self.top.data
+    
+    def is_empty(self):
+        return self.top is None
+    
+    def display(self):
+        current = self.top
+        if not current:
+            print("Stack is empty")
+            return
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")
 
-# Display the stack
-print("Stack after elements are pushed:")
-print(stack)
+if __name__ == "__main__":
+    stack = Stack()
+    
+    n = int(input("Enter number of elements to push into the stack: "))
+    
+    for i in range(n):
+        val = int(input(f"Enter value {i+1}: "))
+        stack.push(val)
+    
+    print("Stack elements:")
+    stack.display()
 
-# Peek the top element
-print("Top element (Peek):", stack[-1])
-
-# Pop the top element
-popped_element = stack.pop()
-print("Popped element:", popped_element)
-
-# Display the stack after pop
-print("Stack after pop:")
-print(stack)
 ```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ba733070-c7b3-4d71-9638-21314da2a3ef)
 
 ## RESULT
-
+thus the program is executed successfully.
 
