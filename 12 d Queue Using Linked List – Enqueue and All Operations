@@ -14,24 +14,29 @@ To write a Python program to add 4 elements to a queue and print the elements pr
 
 ## Program
 
-```python
-queue = []
+```
+reg no:212223070023
+name:Saran Krishna P S
+from collections import deque
 
-# Enqueue elements into the queue
-queue.append('a')
-queue.append('b')
-queue.append('c')
-queue.append('d')
+queue = deque()
 
-# Display the initial queue
-print('Initial Queue:', queue)
+for i in range(4):
+    val = input(f"Enter element {i+1}: ")
+    queue.append(val)
 
-# Print front and rear elements
-print("\nElement at the front of the queue is", queue[0])
-print("\nElement at the rear of the queue is", queue[-1])
+print("\nQueue contents:")
+print(list(queue))
+
+if queue:
+    print(f"Front element: {queue[0]}")
+    print(f"Rear element: {queue[-1]}")
+else:
+    print("Queue is empty.")
+
 
 
 ## OUTPUT
 
-
 ## RESULT
+thus the program is executed successfully.
