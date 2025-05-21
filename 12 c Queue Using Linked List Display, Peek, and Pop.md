@@ -35,6 +35,7 @@ while not q.empty():
 ```
 
 ## OUTPUT
+![Screenshot 2025-05-21 104314](https://github.com/user-attachments/assets/703160b2-b1b3-49ef-b080-5543a08fe02d)
 
 ## RESULT
 thus the program is executed successfully.
