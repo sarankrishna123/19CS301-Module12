@@ -37,7 +37,8 @@ else:
 
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/22aec6f7-4216-4f36-b2c2-deb273885ab5)
+![image](https://github.com/user-attachments/assets/5d77a674-79cf-4cf1-8e15-0e9a3ea5ca16)
+
 
 ## RESULT
 thus the program is executed successfully.
